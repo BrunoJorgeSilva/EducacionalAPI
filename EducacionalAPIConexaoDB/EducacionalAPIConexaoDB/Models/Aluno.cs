@@ -17,5 +17,6 @@ public class Aluno
     public int TurmaId { get; set; }
     [JsonIgnore]
     public Turma? Turma { get;set; }
+    public ICollection<Email>? Email { get; set; }
     
 }

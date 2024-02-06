@@ -15,6 +15,8 @@ namespace EducacionalAPIConexaoDB.Context
         public DbSet<Turma>? Turmas { get; set; } 
 
         public DbSet<Falta>? Faltas { get; set; }
+
+        public DbSet<Email>? Email { get; set; }
         
         //protected override void OnModelCreating(ModelBuilder mb)
         //{
