@@ -4,6 +4,7 @@ namespace EducacionalAPIConexaoDB.Models
 {
     public class Email
     {
+        [Key]
         public int EmailId { get; set; }
         [EmailAddress]
         public string EmailPrincipal { get; set; }
