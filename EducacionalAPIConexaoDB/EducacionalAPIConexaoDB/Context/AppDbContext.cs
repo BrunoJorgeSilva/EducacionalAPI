@@ -8,13 +8,13 @@ namespace EducacionalAPIConexaoDB.Context
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) 
         { 
         }
-        public DbSet<Educacional>? Educacionais { get; set; } 
+        public DbSet<Educational>? Educationals { get; set; } 
 
-        public DbSet<Aluno>? Alunos { get; set;}
+        public DbSet<Student>? Students { get; set;}
 
-        public DbSet<Turma>? Turmas { get; set; } 
+        public DbSet<Classroom>? ClassRooms { get; set; } 
 
-        public DbSet<Falta>? Faltas { get; set; }
+        public DbSet<Lack>? Lacks { get; set; }
 
         public DbSet<Email>? Email { get; set; }
         

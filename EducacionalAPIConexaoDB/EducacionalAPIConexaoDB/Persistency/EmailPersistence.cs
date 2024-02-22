@@ -8,24 +8,24 @@ namespace EducacionalAPIConexaoDB.Persistency
     public class EmailPersistence : IEmailPersistence
     {
         private readonly AppDbContext _context;
-        private readonly IAlunosPersistence _alunosPersistence;
-        public EmailPersistence(AppDbContext context, IAlunosPersistence alunosPersistence) 
+        private readonly IStudentPersistence _studentsPersistence;
+        public EmailPersistence(AppDbContext context, IStudentPersistence studentsPersistence) 
         {
             _context = context;
-            _alunosPersistence = alunosPersistence;
+            _studentsPersistence = studentsPersistence;
         }
         public Email AddEmail (string nome, string emailParaInserir, string emailResponsavel)
         {
-            var alunos = _alunosPersistence.GetAlunoPorNome(nome);
-            if(alunos.Count() == 0)
+            var Students = _studentsPersistence.GetStudentByName(nome);
+            if(Students.Count() == 0)
             {
-                throw new Exception("Falha ao Inserir Email, aluno não encontrado, verifique a digitação.");
+                throw new Exception("Falha ao Inserir Email, Student não encontrado, verifique a digitação.");
             }
             Email email = new Email()
             {
-                EmailPrincipal = emailParaInserir,
-                AlunoId = alunos.FirstOrDefault().AlunoId,
-                EmailResponsavel = emailResponsavel
+                MainEmail = emailParaInserir,
+                StudentId = Students.FirstOrDefault().StudentId,
+                ResponsibleEmail = emailResponsavel
             };
             try
             {

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<EducacionalAPIConexaoDB.Models.Turma>
+﻿@model IEnumerable<EducacionalAPIConexaoDB.Models.Classroom>
 
 @{
     ViewData["Title"] = "Index";
@@ -13,13 +13,13 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.AnoTurma)
+                @Html.DisplayNameFor(model => model.YearGrade)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SerieTurma)
+                @Html.DisplayNameFor(model => model.GradeClassRoom)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.LetraTurma)
+                @Html.DisplayNameFor(model => model.LetterGrade)
             </th>
             <th></th>
         </tr>
@@ -28,18 +28,18 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.AnoTurma)
+                @Html.DisplayFor(modelItem => item.YearGrade)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.SerieTurma)
+                @Html.DisplayFor(modelItem => item.GradeClassRoom)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.LetraTurma)
+                @Html.DisplayFor(modelItem => item.LetterGrade)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.TurmaId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.TurmaId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.TurmaId">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.ClassroomId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.ClassroomId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ClassroomId">Delete</a>
             </td>
         </tr>
 }

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using EducacionalAPIConexaoDB.Context;
 using EducacionalAPIConexaoDB.Models;
 using EducacionalAPIConexaoDB.Persistency;
+using EducacionalAPIConexaoDB.Service;
 
 namespace EducacionalAPIConexaoDB.Controllers
 {
@@ -10,12 +11,10 @@ namespace EducacionalAPIConexaoDB.Controllers
     [ApiController]
     public class EmailController : ControllerBase
     {
-        private readonly AppDbContext _context;
-        private readonly IEmailPersistence _emailPersistency;
-        public EmailController(AppDbContext context, IEmailPersistence emailPersistency)
+        private readonly IEmailService _emailService;
+        public EmailController(AppDbContext context, IEmailService emailService)
         {
-            _context = context;
-            _emailPersistency = emailPersistency;
+            _emailService = emailService;
         }
 
         [HttpPost]
@@ -26,7 +25,7 @@ namespace EducacionalAPIConexaoDB.Controllers
             {
                 return BadRequest();
             }
-            return Ok(_emailPersistency.AddEmail(nome, emailParaCadastrar, emailResponsavel));
+            return Ok(_emailService.AddEmail(nome, emailParaCadastrar, emailResponsavel));
         }
     }
 }

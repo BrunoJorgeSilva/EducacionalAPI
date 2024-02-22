@@ -1,4 +1,4 @@
-﻿@model EducacionalAPIConexaoDB.Models.Turma
+﻿@model EducacionalAPIConexaoDB.Models.Classroom
 
 @{
     ViewData["Title"] = "Delete";
@@ -12,27 +12,27 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AnoTurma)
+            @Html.DisplayNameFor(model => model.YearGrade)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.AnoTurma)
+            @Html.DisplayFor(model => model.YearGrade)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SerieTurma)
+            @Html.DisplayNameFor(model => model.GradeClassRoom)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.SerieTurma)
+            @Html.DisplayFor(model => model.GradeClassRoom)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.LetraTurma)
+            @Html.DisplayNameFor(model => model.LetterGrade)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.LetraTurma)
+            @Html.DisplayFor(model => model.LetterGrade)
         </dd>
     </dl>
     
     <form asp-action="Delete">
-        <input type="hidden" asp-for="TurmaId" />
+        <input type="hidden" asp-for="ClassRoomId" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
         <a asp-action="Index">Back to List</a>
     </form>

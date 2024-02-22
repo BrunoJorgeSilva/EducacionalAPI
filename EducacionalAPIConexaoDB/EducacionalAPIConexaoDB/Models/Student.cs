@@ -7,16 +7,16 @@ namespace EducacionalAPIConexaoDB.Models;
 
 [Table("Aluno")]
 
-public class Aluno
+public class Student
 {
     [Key]
-    public int AlunoId { get; set; }
+    public int StudentId { get; set; }
     [Required] 
     [StringLength(80)]
-    public string? Nome { get; set; }
-    public int TurmaId { get; set; }
+    public string? Name { get; set; }
+    public int ClassRoomId { get; set; }
     [JsonIgnore]
-    public Turma? Turma { get;set; }
+    public Classroom? ClassRoom { get;set; }
     public ICollection<Email>? Email { get; set; }
     
 }

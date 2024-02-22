@@ -9,24 +9,24 @@ using System.Text;
 namespace EducacionalAPIConexaoDB.Controllers
 {
     [Route("api/[controller]"), ApiController]
-    public class ReqAvisoController : ControllerBase
+    public class ReqWarningController : ControllerBase
     {
         private readonly IConfiguration config;
         private readonly string connectionString;
 
-        public ReqAvisoController(IConfiguration config)
+        public ReqWarningController(IConfiguration config)
         {
             this.config = config;
             connectionString = this.config.GetValue<string>("AzureServiceBus");
         }
         [HttpPost]
-        public async Task<IActionResult> Post(Aluno aluno)
+        public async Task<IActionResult> Post(Student aluno)
         {
             await EnviaParaFilaServiceBus(aluno);
             return Ok("Ok");
         }
 
-        private async Task EnviaParaFilaServiceBus(Aluno aluno)
+        private async Task EnviaParaFilaServiceBus(Student aluno)
         {
             string queueName = "profissional";
             var client = new QueueClient(connectionString, queueName, ReceiveMode.PeekLock);
@@ -38,13 +38,13 @@ namespace EducacionalAPIConexaoDB.Controllers
             await client.CloseAsync();
         }
         [HttpPost("falta")]
-        public async Task<IActionResult> Post(Falta falta)
+        public async Task<IActionResult> Post(Lack falta)
         {
             await EnviaParaFilaServiceBusFalta(falta);
             return Ok("Ok");
         }
 
-        private async Task EnviaParaFilaServiceBusFalta(Falta falta)
+        private async Task EnviaParaFilaServiceBusFalta(Lack falta)
         {
             string queueName = "profissional";
             var client = new QueueClient(connectionString, queueName, ReceiveMode.PeekLock);

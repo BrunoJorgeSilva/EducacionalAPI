@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EducacionalAPIConexaoDB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb031232997240b9a86dc644a3af07c6b3971249")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1174581cdd828ccce4d5a0d1d0fad28ebf9b20d7")]
 [assembly: System.Reflection.AssemblyProductAttribute("EducacionalAPIConexaoDB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EducacionalAPIConexaoDB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

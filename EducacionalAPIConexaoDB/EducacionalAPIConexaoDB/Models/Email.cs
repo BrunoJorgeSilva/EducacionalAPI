@@ -7,11 +7,11 @@ namespace EducacionalAPIConexaoDB.Models
         [Key]
         public int EmailId { get; set; }
         [EmailAddress]
-        public string EmailPrincipal { get; set; }
+        public string MainEmail { get; set; }
         [EmailAddress]
-        public string? EmailResponsavel { get; set; }
+        public string? ResponsibleEmail { get; set; }
 
-        public int AlunoId { get; set; }
-        public Aluno? Aluno { get; set; }
+        public int StudentId { get; set; }
+        public Student? Student { get; set; }
     }
 }

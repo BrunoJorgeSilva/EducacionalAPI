@@ -1,41 +1,47 @@
 [
   {
-    "ContainingType": "EducacionalAPIConexaoDB.Controllers.AlunosController",
-    "Method": "GetAlunos",
-    "RelativePath": "Alunos",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[EducacionalAPIConexaoDB.Models.Aluno, EducacionalAPIConexaoDB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "EducacionalAPIConexaoDB.Controllers.AlunosController",
-    "Method": "PostAluno",
-    "RelativePath": "Alunos",
+    "ContainingType": "EducacionalAPIConexaoDB.Controllers.ReqWarningController",
+    "Method": "Post",
+    "RelativePath": "api/ReqWarning",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "aluno",
-        "Type": "EducacionalAPIConexaoDB.Models.Aluno",
+        "Type": "EducacionalAPIConexaoDB.Models.Student",
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EducacionalAPIConexaoDB.Controllers.ReqWarningController",
+    "Method": "Post",
+    "RelativePath": "api/ReqWarning/falta",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "falta",
+        "Type": "EducacionalAPIConexaoDB.Models.Lack",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EducacionalAPIConexaoDB.Controllers.ClassroomsController",
+    "Method": "Get",
+    "RelativePath": "Classrooms",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "EducacionalAPIConexaoDB.Models.Aluno",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EducacionalAPIConexaoDB.Models.Classroom, EducacionalAPIConexaoDB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -46,9 +52,35 @@
     ]
   },
   {
-    "ContainingType": "EducacionalAPIConexaoDB.Controllers.AlunosController",
-    "Method": "GetAluno",
-    "RelativePath": "Alunos/{id}",
+    "ContainingType": "EducacionalAPIConexaoDB.Controllers.ClassroomsController",
+    "Method": "PostClassRoom",
+    "RelativePath": "Classrooms",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ClassRoom",
+        "Type": "EducacionalAPIConexaoDB.Models.Classroom",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "EducacionalAPIConexaoDB.Models.Classroom",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EducacionalAPIConexaoDB.Controllers.ClassroomsController",
+    "Method": "GetClassRoom",
+    "RelativePath": "Classrooms/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -61,7 +93,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "EducacionalAPIConexaoDB.Models.Aluno",
+        "Type": "EducacionalAPIConexaoDB.Models.Classroom",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -72,9 +104,9 @@
     ]
   },
   {
-    "ContainingType": "EducacionalAPIConexaoDB.Controllers.AlunosController",
+    "ContainingType": "EducacionalAPIConexaoDB.Controllers.ClassroomsController",
     "Method": "Put",
-    "RelativePath": "Alunos/{id}",
+    "RelativePath": "Classrooms/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -85,17 +117,17 @@
         "IsRequired": true
       },
       {
-        "Name": "aluno",
-        "Type": "EducacionalAPIConexaoDB.Models.Aluno",
+        "Name": "ClassRoom",
+        "Type": "EducacionalAPIConexaoDB.Models.Classroom",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "EducacionalAPIConexaoDB.Controllers.AlunosController",
-    "Method": "DeleteAluno",
-    "RelativePath": "Alunos/{id}",
+    "ContainingType": "EducacionalAPIConexaoDB.Controllers.ClassroomsController",
+    "Method": "Delete",
+    "RelativePath": "Classrooms/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -109,22 +141,16 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "EducacionalAPIConexaoDB.Controllers.AlunosController",
-    "Method": "GetAlunoPorNome",
-    "RelativePath": "Alunos/{nome}",
+    "ContainingType": "EducacionalAPIConexaoDB.Controllers.ClassroomsController",
+    "Method": "GetClassRoomsAlunos",
+    "RelativePath": "Classrooms/alunos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "nome",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[EducacionalAPIConexaoDB.Models.Aluno, EducacionalAPIConexaoDB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EducacionalAPIConexaoDB.Models.Classroom, EducacionalAPIConexaoDB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -133,38 +159,6 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "EducacionalAPIConexaoDB.Controllers.ReqAvisoController",
-    "Method": "Post",
-    "RelativePath": "api/ReqAviso",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "aluno",
-        "Type": "EducacionalAPIConexaoDB.Models.Aluno",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EducacionalAPIConexaoDB.Controllers.ReqAvisoController",
-    "Method": "Post",
-    "RelativePath": "api/ReqAviso/falta",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "falta",
-        "Type": "EducacionalAPIConexaoDB.Models.Falta",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   },
   {
     "ContainingType": "EducacionalAPIConexaoDB.Controllers.EmailController",
@@ -203,16 +197,16 @@
     ]
   },
   {
-    "ContainingType": "EducacionalAPIConexaoDB.Controllers.TurmasController",
-    "Method": "Get",
-    "RelativePath": "Turmas",
+    "ContainingType": "EducacionalAPIConexaoDB.Controllers.StudentsController",
+    "Method": "GetStudents",
+    "RelativePath": "Students",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[EducacionalAPIConexaoDB.Models.Turma, EducacionalAPIConexaoDB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EducacionalAPIConexaoDB.Models.Student, EducacionalAPIConexaoDB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -223,22 +217,22 @@
     ]
   },
   {
-    "ContainingType": "EducacionalAPIConexaoDB.Controllers.TurmasController",
-    "Method": "PostTurma",
-    "RelativePath": "Turmas",
+    "ContainingType": "EducacionalAPIConexaoDB.Controllers.StudentsController",
+    "Method": "PostStudent",
+    "RelativePath": "Students",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "turma",
-        "Type": "EducacionalAPIConexaoDB.Models.Turma",
+        "Name": "Student",
+        "Type": "EducacionalAPIConexaoDB.Models.Student",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "EducacionalAPIConexaoDB.Models.Turma",
+        "Type": "EducacionalAPIConexaoDB.Models.Student",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -249,9 +243,9 @@
     ]
   },
   {
-    "ContainingType": "EducacionalAPIConexaoDB.Controllers.TurmasController",
-    "Method": "GetTurma",
-    "RelativePath": "Turmas/{id}",
+    "ContainingType": "EducacionalAPIConexaoDB.Controllers.StudentsController",
+    "Method": "GetStudent",
+    "RelativePath": "Students/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -264,7 +258,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "EducacionalAPIConexaoDB.Models.Turma",
+        "Type": "EducacionalAPIConexaoDB.Models.Student",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -275,9 +269,9 @@
     ]
   },
   {
-    "ContainingType": "EducacionalAPIConexaoDB.Controllers.TurmasController",
+    "ContainingType": "EducacionalAPIConexaoDB.Controllers.StudentsController",
     "Method": "Put",
-    "RelativePath": "Turmas/{id}",
+    "RelativePath": "Students/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -288,17 +282,17 @@
         "IsRequired": true
       },
       {
-        "Name": "turma",
-        "Type": "EducacionalAPIConexaoDB.Models.Turma",
+        "Name": "Student",
+        "Type": "EducacionalAPIConexaoDB.Models.Student",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "EducacionalAPIConexaoDB.Controllers.TurmasController",
-    "Method": "Delete",
-    "RelativePath": "Turmas/{id}",
+    "ContainingType": "EducacionalAPIConexaoDB.Controllers.StudentsController",
+    "Method": "DeleteStudent",
+    "RelativePath": "Students/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -312,16 +306,22 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "EducacionalAPIConexaoDB.Controllers.TurmasController",
-    "Method": "GetTurmasAlunos",
-    "RelativePath": "Turmas/alunos",
+    "ContainingType": "EducacionalAPIConexaoDB.Controllers.StudentsController",
+    "Method": "GetStudentByName",
+    "RelativePath": "Students/{Name}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[EducacionalAPIConexaoDB.Models.Turma, EducacionalAPIConexaoDB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EducacionalAPIConexaoDB.Models.Student, EducacionalAPIConexaoDB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
