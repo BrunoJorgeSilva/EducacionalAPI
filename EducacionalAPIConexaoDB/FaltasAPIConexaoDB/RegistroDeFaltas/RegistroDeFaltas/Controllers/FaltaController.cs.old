@@ -1,0 +1,29 @@
+using Microsoft.AspNetCore.Mvc;
+using RegistroDeFaltas.Models;
+using RegistroDeFaltas.Controllers;
+
+namespace RegistroDeFaltas.Controllers
+{
+    [ApiController]
+    [Route("[controller]")]
+    public class FaltaController : ControllerBase
+    { 
+        private readonly ResponsaveisController _responsaveisController;
+
+        public FaltaController(ResponsaveisController _responsaveisController)
+        {
+            this._responsaveisController = _responsaveisController;
+        }
+
+        [HttpPost]
+        public ActionResult<Falta> PostFalta(Falta falta)
+        {
+            _responsaveisController.PostSmsEmailParaResponsavel(falta);
+            if (falta is null)
+            {
+                return BadRequest();
+            }
+            return falta;
+        }
+    }
+}

@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using EducacionalAPIConexaoDB.Context;
 using System.Text.Json.Serialization;
+using EducacionalAPIConexaoDB.Persistency;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,8 @@ builder.Services.AddControllers()
        .AddJsonOptions(options =>
           options.JsonSerializerOptions
              .ReferenceHandler = ReferenceHandler.IgnoreCycles);
+builder.Services.AddScoped<IAlunosPersistence, AlunosPersistence>();
+builder.Services.AddScoped<IEmailPersistence, EmailPersistence>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

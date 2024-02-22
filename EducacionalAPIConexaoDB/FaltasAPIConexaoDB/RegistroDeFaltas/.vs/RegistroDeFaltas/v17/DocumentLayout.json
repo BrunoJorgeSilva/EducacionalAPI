@@ -1,0 +1,188 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\FaltasAPIConexaoDB\\RegistroDeFaltas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\EmailHub\\EmailHub\\EmailHub\\HostedService\\EmailTopicConsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A977B6-80B5-4F7C-8672-6CCD7B2A4F67}|RegistroDeFaltas\\RegistroDeFaltas.csproj|c:\\educacionalapi\\educacionalapiconexaodb\\faltasapiconexaodb\\registrodefaltas\\registrodefaltas\\servico\\servicointermediario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A977B6-80B5-4F7C-8672-6CCD7B2A4F67}|RegistroDeFaltas\\RegistroDeFaltas.csproj|solutionrelative:registrodefaltas\\servico\\servicointermediario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A977B6-80B5-4F7C-8672-6CCD7B2A4F67}|RegistroDeFaltas\\RegistroDeFaltas.csproj|c:\\educacionalapi\\educacionalapiconexaodb\\faltasapiconexaodb\\registrodefaltas\\registrodefaltas\\servico\\interface\\iservicointermediario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A977B6-80B5-4F7C-8672-6CCD7B2A4F67}|RegistroDeFaltas\\RegistroDeFaltas.csproj|solutionrelative:registrodefaltas\\servico\\interface\\iservicointermediario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A977B6-80B5-4F7C-8672-6CCD7B2A4F67}|RegistroDeFaltas\\RegistroDeFaltas.csproj|c:\\educacionalapi\\educacionalapiconexaodb\\faltasapiconexaodb\\registrodefaltas\\registrodefaltas\\hostedservices\\faltaqueueconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A977B6-80B5-4F7C-8672-6CCD7B2A4F67}|RegistroDeFaltas\\RegistroDeFaltas.csproj|solutionrelative:registrodefaltas\\hostedservices\\faltaqueueconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A977B6-80B5-4F7C-8672-6CCD7B2A4F67}|RegistroDeFaltas\\RegistroDeFaltas.csproj|c:\\educacionalapi\\educacionalapiconexaodb\\faltasapiconexaodb\\registrodefaltas\\registrodefaltas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A977B6-80B5-4F7C-8672-6CCD7B2A4F67}|RegistroDeFaltas\\RegistroDeFaltas.csproj|solutionrelative:registrodefaltas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A977B6-80B5-4F7C-8672-6CCD7B2A4F67}|RegistroDeFaltas\\RegistroDeFaltas.csproj|c:\\educacionalapi\\educacionalapiconexaodb\\faltasapiconexaodb\\registrodefaltas\\registrodefaltas\\controllers\\faltacontroller.cs.old||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A977B6-80B5-4F7C-8672-6CCD7B2A4F67}|RegistroDeFaltas\\RegistroDeFaltas.csproj|solutionrelative:registrodefaltas\\controllers\\faltacontroller.cs.old||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A977B6-80B5-4F7C-8672-6CCD7B2A4F67}|RegistroDeFaltas\\RegistroDeFaltas.csproj|c:\\educacionalapi\\educacionalapiconexaodb\\faltasapiconexaodb\\registrodefaltas\\registrodefaltas\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E8A977B6-80B5-4F7C-8672-6CCD7B2A4F67}|RegistroDeFaltas\\RegistroDeFaltas.csproj|solutionrelative:registrodefaltas\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A977B6-80B5-4F7C-8672-6CCD7B2A4F67}|RegistroDeFaltas\\RegistroDeFaltas.csproj|c:\\educacionalapi\\educacionalapiconexaodb\\faltasapiconexaodb\\registrodefaltas\\registrodefaltas\\controllers\\responsaveiscontroller.cs.old||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A977B6-80B5-4F7C-8672-6CCD7B2A4F67}|RegistroDeFaltas\\RegistroDeFaltas.csproj|solutionrelative:registrodefaltas\\controllers\\responsaveiscontroller.cs.old||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A977B6-80B5-4F7C-8672-6CCD7B2A4F67}|RegistroDeFaltas\\RegistroDeFaltas.csproj|c:\\educacionalapi\\educacionalapiconexaodb\\faltasapiconexaodb\\registrodefaltas\\registrodefaltas\\registrodefaltas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E8A977B6-80B5-4F7C-8672-6CCD7B2A4F67}|RegistroDeFaltas\\RegistroDeFaltas.csproj|solutionrelative:registrodefaltas\\registrodefaltas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8A977B6-80B5-4F7C-8672-6CCD7B2A4F67}|RegistroDeFaltas\\RegistroDeFaltas.csproj|c:\\educacionalapi\\educacionalapiconexaodb\\faltasapiconexaodb\\registrodefaltas\\registrodefaltas\\models\\falta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8A977B6-80B5-4F7C-8672-6CCD7B2A4F67}|RegistroDeFaltas\\RegistroDeFaltas.csproj|solutionrelative:registrodefaltas\\models\\falta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RegistroDeFaltas.csproj",
+              "DocumentMoniker": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\FaltasAPIConexaoDB\\RegistroDeFaltas\\RegistroDeFaltas\\RegistroDeFaltas.csproj",
+              "RelativeDocumentMoniker": "RegistroDeFaltas\\RegistroDeFaltas.csproj",
+              "ToolTip": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\FaltasAPIConexaoDB\\RegistroDeFaltas\\RegistroDeFaltas\\RegistroDeFaltas.csproj",
+              "RelativeToolTip": "RegistroDeFaltas\\RegistroDeFaltas.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-02-13T18:00:09.359Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FaltaQueueConsumer.cs",
+              "DocumentMoniker": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\FaltasAPIConexaoDB\\RegistroDeFaltas\\RegistroDeFaltas\\HostedServices\\FaltaQueueConsumer.cs",
+              "RelativeDocumentMoniker": "RegistroDeFaltas\\HostedServices\\FaltaQueueConsumer.cs",
+              "ToolTip": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\FaltasAPIConexaoDB\\RegistroDeFaltas\\RegistroDeFaltas\\HostedServices\\FaltaQueueConsumer.cs",
+              "RelativeToolTip": "RegistroDeFaltas\\HostedServices\\FaltaQueueConsumer.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAowEkAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-13T17:44:11.198Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmailTopicConsumer.cs",
+              "DocumentMoniker": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\EmailHub\\EmailHub\\EmailHub\\HostedService\\EmailTopicConsumer.cs",
+              "RelativeDocumentMoniker": "..\\..\\EmailHub\\EmailHub\\EmailHub\\HostedService\\EmailTopicConsumer.cs",
+              "ToolTip": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\EmailHub\\EmailHub\\EmailHub\\HostedService\\EmailTopicConsumer.cs",
+              "RelativeToolTip": "..\\..\\EmailHub\\EmailHub\\EmailHub\\HostedService\\EmailTopicConsumer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-15T16:46:33.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\FaltasAPIConexaoDB\\RegistroDeFaltas\\RegistroDeFaltas\\Program.cs",
+              "RelativeDocumentMoniker": "RegistroDeFaltas\\Program.cs",
+              "ToolTip": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\FaltasAPIConexaoDB\\RegistroDeFaltas\\RegistroDeFaltas\\Program.cs",
+              "RelativeToolTip": "RegistroDeFaltas\\Program.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-13T16:55:13.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServicoIntermediario.cs",
+              "DocumentMoniker": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\FaltasAPIConexaoDB\\RegistroDeFaltas\\RegistroDeFaltas\\Servico\\ServicoIntermediario.cs",
+              "RelativeDocumentMoniker": "RegistroDeFaltas\\Servico\\ServicoIntermediario.cs",
+              "ToolTip": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\FaltasAPIConexaoDB\\RegistroDeFaltas\\RegistroDeFaltas\\Servico\\ServicoIntermediario.cs",
+              "RelativeToolTip": "RegistroDeFaltas\\Servico\\ServicoIntermediario.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAuwCAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T12:58:36.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IServicoIntermediario.cs",
+              "DocumentMoniker": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\FaltasAPIConexaoDB\\RegistroDeFaltas\\RegistroDeFaltas\\Servico\\Interface\\IServicoIntermediario.cs",
+              "RelativeDocumentMoniker": "RegistroDeFaltas\\Servico\\Interface\\IServicoIntermediario.cs",
+              "ToolTip": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\FaltasAPIConexaoDB\\RegistroDeFaltas\\RegistroDeFaltas\\Servico\\Interface\\IServicoIntermediario.cs",
+              "RelativeToolTip": "RegistroDeFaltas\\Servico\\Interface\\IServicoIntermediario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T19:57:19.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FaltaController.cs.old",
+              "DocumentMoniker": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\FaltasAPIConexaoDB\\RegistroDeFaltas\\RegistroDeFaltas\\Controllers\\FaltaController.cs.old",
+              "RelativeDocumentMoniker": "RegistroDeFaltas\\Controllers\\FaltaController.cs.old",
+              "ToolTip": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\FaltasAPIConexaoDB\\RegistroDeFaltas\\RegistroDeFaltas\\Controllers\\FaltaController.cs.old",
+              "RelativeToolTip": "RegistroDeFaltas\\Controllers\\FaltaController.cs.old",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-02-13T17:15:55.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\FaltasAPIConexaoDB\\RegistroDeFaltas\\RegistroDeFaltas\\appsettings.json",
+              "RelativeDocumentMoniker": "RegistroDeFaltas\\appsettings.json",
+              "ToolTip": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\FaltasAPIConexaoDB\\RegistroDeFaltas\\RegistroDeFaltas\\appsettings.json",
+              "RelativeToolTip": "RegistroDeFaltas\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-13T17:25:09.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ResponsaveisController.cs.old",
+              "DocumentMoniker": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\FaltasAPIConexaoDB\\RegistroDeFaltas\\RegistroDeFaltas\\Controllers\\ResponsaveisController.cs.old",
+              "RelativeDocumentMoniker": "RegistroDeFaltas\\Controllers\\ResponsaveisController.cs.old",
+              "ToolTip": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\FaltasAPIConexaoDB\\RegistroDeFaltas\\RegistroDeFaltas\\Controllers\\ResponsaveisController.cs.old",
+              "RelativeToolTip": "RegistroDeFaltas\\Controllers\\ResponsaveisController.cs.old",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-02-14T12:01:02.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Falta.cs",
+              "DocumentMoniker": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\FaltasAPIConexaoDB\\RegistroDeFaltas\\RegistroDeFaltas\\Models\\Falta.cs",
+              "RelativeDocumentMoniker": "RegistroDeFaltas\\Models\\Falta.cs",
+              "ToolTip": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\FaltasAPIConexaoDB\\RegistroDeFaltas\\RegistroDeFaltas\\Models\\Falta.cs",
+              "RelativeToolTip": "RegistroDeFaltas\\Models\\Falta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-13T17:12:30.092Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

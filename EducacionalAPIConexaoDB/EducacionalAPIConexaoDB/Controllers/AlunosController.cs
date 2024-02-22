@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using EducacionalAPIConexaoDB.Context;
 using EducacionalAPIConexaoDB.Models;
+using EducacionalAPIConexaoDB.Persistency;
 
 namespace EducacionalAPIConexaoDB.Controllers
 {
@@ -15,29 +16,32 @@ namespace EducacionalAPIConexaoDB.Controllers
     public class AlunosController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly IAlunosPersistence _alunosPersistence;
 
-        public AlunosController(AppDbContext context)
+        public AlunosController(AppDbContext context, IAlunosPersistence alunosPersistence)
         {
             _context = context;
+            _alunosPersistence = alunosPersistence;
         }
 
         // GET: api/Alunos
         [HttpGet]
         public ActionResult<IEnumerable<Aluno>> GetAlunos()
         {
-            var alunos = _context.Alunos.AsNoTracking().ToList();
+            var alunos = _alunosPersistence.GetAlunos();
+            //var alunos = _context.Alunos.AsNoTracking().ToList();
             if (alunos is null)
             {
                 return NotFound("Nenhum aluno Encontrado");
             }
-            return alunos; 
+            return Ok(alunos); 
         }
 
         // GET: api/Alunos/5
         [HttpGet("{id:int}", Name= "ObterAluno")]
         public ActionResult<Aluno> GetAluno(int id)
         {
-            var aluno = _context.Alunos.Where(x => x.AlunoId == id).FirstOrDefault(); 
+            var aluno = _context.Alunos.Where(x => x.AlunoId == id).Include("Email").FirstOrDefault(); 
 
             if (aluno == null)
             {

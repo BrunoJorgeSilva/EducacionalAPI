@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\EmailHub\\EmailHub\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7211E84F-65CC-4FCE-8FD7-03DA1D7B9866}|EmailHub\\EmailHub.csproj|c:\\educacionalapi\\educacionalapiconexaodb\\emailhub\\emailhub\\emailhub\\hostedservice\\emailtopicconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7211E84F-65CC-4FCE-8FD7-03DA1D7B9866}|EmailHub\\EmailHub.csproj|solutionrelative:emailhub\\hostedservice\\emailtopicconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7211E84F-65CC-4FCE-8FD7-03DA1D7B9866}|EmailHub\\EmailHub.csproj|c:\\educacionalapi\\educacionalapiconexaodb\\emailhub\\emailhub\\emailhub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7211E84F-65CC-4FCE-8FD7-03DA1D7B9866}|EmailHub\\EmailHub.csproj|solutionrelative:emailhub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7211E84F-65CC-4FCE-8FD7-03DA1D7B9866}|EmailHub\\EmailHub.csproj|c:\\educacionalapi\\educacionalapiconexaodb\\emailhub\\emailhub\\emailhub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7211E84F-65CC-4FCE-8FD7-03DA1D7B9866}|EmailHub\\EmailHub.csproj|solutionrelative:emailhub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7211E84F-65CC-4FCE-8FD7-03DA1D7B9866}|EmailHub\\EmailHub.csproj|c:\\educacionalapi\\educacionalapiconexaodb\\emailhub\\emailhub\\emailhub\\services\\enviaemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7211E84F-65CC-4FCE-8FD7-03DA1D7B9866}|EmailHub\\EmailHub.csproj|solutionrelative:emailhub\\services\\enviaemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7211E84F-65CC-4FCE-8FD7-03DA1D7B9866}|EmailHub\\EmailHub.csproj|c:\\educacionalapi\\educacionalapiconexaodb\\emailhub\\emailhub\\emailhub\\viewmodel\\emailmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7211E84F-65CC-4FCE-8FD7-03DA1D7B9866}|EmailHub\\EmailHub.csproj|solutionrelative:emailhub\\viewmodel\\emailmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmailModel.cs",
+              "DocumentMoniker": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\EmailHub\\EmailHub\\EmailHub\\ViewModel\\EmailModel.cs",
+              "RelativeDocumentMoniker": "EmailHub\\ViewModel\\EmailModel.cs",
+              "ToolTip": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\EmailHub\\EmailHub\\EmailHub\\ViewModel\\EmailModel.cs",
+              "RelativeToolTip": "EmailHub\\ViewModel\\EmailModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T18:52:01.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EnviaEmail.cs",
+              "DocumentMoniker": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\EmailHub\\EmailHub\\EmailHub\\Services\\EnviaEmail.cs",
+              "RelativeDocumentMoniker": "EmailHub\\Services\\EnviaEmail.cs",
+              "ToolTip": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\EmailHub\\EmailHub\\EmailHub\\Services\\EnviaEmail.cs",
+              "RelativeToolTip": "EmailHub\\Services\\EnviaEmail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T18:47:51.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\EmailHub\\EmailHub\\EmailHub\\appsettings.json",
+              "RelativeDocumentMoniker": "EmailHub\\appsettings.json",
+              "ToolTip": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\EmailHub\\EmailHub\\EmailHub\\appsettings.json",
+              "RelativeToolTip": "EmailHub\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-14T18:45:33.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmailTopicConsumer.cs",
+              "DocumentMoniker": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\EmailHub\\EmailHub\\EmailHub\\HostedService\\EmailTopicConsumer.cs",
+              "RelativeDocumentMoniker": "EmailHub\\HostedService\\EmailTopicConsumer.cs",
+              "ToolTip": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\EmailHub\\EmailHub\\EmailHub\\HostedService\\EmailTopicConsumer.cs",
+              "RelativeToolTip": "EmailHub\\HostedService\\EmailTopicConsumer.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAADwvyUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T18:43:01.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\EmailHub\\EmailHub\\EmailHub\\Program.cs",
+              "RelativeDocumentMoniker": "EmailHub\\Program.cs",
+              "ToolTip": "C:\\EducacionalAPI\\EducacionalAPIConexaoDB\\EmailHub\\EmailHub\\EmailHub\\Program.cs",
+              "RelativeToolTip": "EmailHub\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T18:41:21.305Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

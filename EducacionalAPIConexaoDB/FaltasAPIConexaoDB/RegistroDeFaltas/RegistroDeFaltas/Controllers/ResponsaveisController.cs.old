@@ -1,0 +1,44 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Azure.ServiceBus;
+using Newtonsoft.Json;
+using RegistroDeFaltas.Models;
+using System.Text;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
+
+
+
+namespace RegistroDeFaltas.Controllers
+{
+    [Route("api/[controller]"), ApiController]
+    public class ResponsaveisController : ControllerBase
+    {
+        private readonly IConfiguration config;
+        private readonly string connectionString;
+
+        public ResponsaveisController(IConfiguration config)
+        {
+            this.config = config;
+            connectionString = this.config.GetValue<string>("AzureServiceBus");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> PostSmsEmailParaResponsavel(Falta falta)
+        {
+            await EnviaTopicoServiceBus(falta);
+            return Ok("Ok");
+        }
+
+        private async Task EnviaTopicoServiceBus(Falta falta)
+        {
+            string topicName = "evento";
+            var client = new TopicClient(connectionString, topicName);
+            string messageBody = "Atenção identificamos que o aluno XXXX faltou na data" + falta.DiaFalta.Value.Date + ". Caso não esteja ciente da causa da falta, entre em contato com a direção da Educacional";
+
+            var message = new Message(Encoding.UTF8.GetBytes(messageBody));
+
+            await client.SendAsync(message);
+            await client.CloseAsync();
+        }
+    }
+}

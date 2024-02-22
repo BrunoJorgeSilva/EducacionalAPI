@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using EducacionalAPIConexaoDB.Context;
 using EducacionalAPIConexaoDB.Models;
+using EducacionalAPIConexaoDB.Persistency;
 
 namespace EducacionalAPIConexaoDB.Controllers
 {
@@ -10,31 +11,22 @@ namespace EducacionalAPIConexaoDB.Controllers
     public class EmailController : ControllerBase
     {
         private readonly AppDbContext _context;
-        public EmailController(AppDbContext context)
+        private readonly IEmailPersistence _emailPersistency;
+        public EmailController(AppDbContext context, IEmailPersistence emailPersistency)
         {
             _context = context;
+            _emailPersistency = emailPersistency;
         }
 
         [HttpPost]
-        public ActionResult<Email> AddEmail(string nome, string emailParaCadastrar)
+        public ActionResult<Email> AddEmail(string nome, string emailParaCadastrar, string emailResponsavel)
         {
             
             if (string.IsNullOrEmpty(nome) || string.IsNullOrEmpty(emailParaCadastrar))
             {
                 return BadRequest();
             }
-            Email email = new Email()
-            {
-                EmailPrincipal = emailParaCadastrar,
-                AlunoId = 1
-            };
-
-            _context.Email.Add(email);
-            _context.SaveChanges();
-
-            Email emailRetorno = _context.Email.Where(x => x.EmailId == email.EmailId).Include("Aluno").FirstOrDefault();
-
-            return new CreatedAtRouteResult("ObterAluno", new { id = emailRetorno.EmailId }, email);
+            return Ok(_emailPersistency.AddEmail(nome, emailParaCadastrar, emailResponsavel));
         }
     }
 }

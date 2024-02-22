@@ -1,0 +1,44 @@
+[
+  {
+    "ContainingType": "RegistroDeFaltas.Controllers.ResponsaveisController",
+    "Method": "PostSmsEmailParaResponsavel",
+    "RelativePath": "api/Responsaveis",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "falta",
+        "Type": "RegistroDeFaltas.Models.Falta",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RegistroDeFaltas.Controllers.FaltaController",
+    "Method": "PostFalta",
+    "RelativePath": "Falta",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "falta",
+        "Type": "RegistroDeFaltas.Models.Falta",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RegistroDeFaltas.Models.Falta",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
