@@ -18,5 +18,5 @@ public class Student
     [JsonIgnore]
     public Classroom? ClassRoom { get;set; }
     public ICollection<Email>? Email { get; set; }
-    
+    public bool? Active { get; set; }
 }

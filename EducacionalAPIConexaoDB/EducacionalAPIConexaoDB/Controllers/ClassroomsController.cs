@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using EducacionalAPIConexaoDB.Context;
 using EducacionalAPIConexaoDB.Models;
+using EducacionalAPIConexaoDB.Service;
 
 namespace EducacionalAPIConexaoDB.Controllers
 {
@@ -14,59 +15,48 @@ namespace EducacionalAPIConexaoDB.Controllers
     [ApiController]
     public class ClassroomsController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly IClassRoomService _classroomService;
 
-        public ClassroomsController(AppDbContext context)
+        public ClassroomsController(IClassRoomService classroomService)
         {
-            _context = context;
+            _classroomService = classroomService;
         }
 
         // GET: api/ClassRooms
         [HttpGet]
         public ActionResult<IEnumerable<Classroom>> Get()
         {
-            var ClassRooms = _context.ClassRooms.AsNoTracking().ToList();
-            if (ClassRooms is null)
+            var classRooms = _classroomService.GetClassRooms();
+            if (classRooms is null || classRooms.Count == 0)
             {
-                return NotFound("Nenhuma ClassRoom Encontrado");
+                return NotFound("Classrooms not found.");
             }
-            return ClassRooms; 
+            return Ok(classRooms);
         }
 
         [HttpGet("alunos")]
         public ActionResult<IEnumerable<Classroom>> GetClassRoomsAlunos()
         {
-            try
-            {
-                return _context.ClassRooms.Include(a => a.Students).ToList();
-            }
-            catch (Exception)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Ocorreu um problema inesperado na captura de dados solicitados.");
-            }
-            
+            var classroomswithstudents = _classroomService.GetClassRoomsAlunos();
+            if (classroomswithstudents == null || classroomswithstudents.Count() == 0)
+                return NotFound("Classrooms not found");
+            else
+                return Ok(classroomswithstudents);
+
         }
 
         // GET: api/ClassRooms/5
-        [HttpGet("{id:int}", Name= "ObterClassRoom")]
-        public ActionResult<Classroom> GetClassRoom(int id)
+        [HttpGet("{id:int}", Name = "GetClassRoomById")]
+        public ActionResult<Classroom> GetClassRoomById(int id)
         {
-            try
-            {
-                var ClassRoom = _context.ClassRooms.FirstOrDefault(x => x.ClassroomId == id);
 
-                if (ClassRoom == null)
-                {
-                    return NotFound("ClassRoom não encontrado.");
-                }
+            var ClassRoom = _classroomService.GetClassRoomById(id);
 
-                return Ok(ClassRoom);
-            }
-            catch (Exception)
+            if (ClassRoom == null)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Ocorreu um problema inesperado na captura de dados solicitados.");
+                return NotFound("Classroom not found.");
             }
-            
+            return Ok(ClassRoom);
         }
 
         [HttpPost]
@@ -76,51 +66,33 @@ namespace EducacionalAPIConexaoDB.Controllers
             {
                 return BadRequest();
             }
+            var classroomAdded = _classroomService.PostClassRoom(ClassRoom);
 
-            _context.ClassRooms.Add(ClassRoom);
-            _context.SaveChanges();
-
-            var novaClassRoom = _context.ClassRooms.Where(x => x.ClassroomId == ClassRoom.ClassroomId); 
-
-            return new CreatedAtRouteResult("ObterClassRoom", new { id = ClassRoom.ClassroomId }, ClassRoom);
+            return Ok(classroomAdded);
         }
 
         // PUT: api/ClassRooms/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id:int}")]
-        public ActionResult Put(int id, Classroom ClassRoom)
+        public ActionResult<Classroom> Put(int id, Classroom ClassRoom)
         {
-            if (id != ClassRoom.ClassroomId)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(ClassRoom).State = EntityState.Modified;
-            _context.SaveChanges();
-
-            return Ok(ClassRoom);
+            var classRoomEdited = _classroomService.Put(id, ClassRoom);
+            return Ok(classRoomEdited);
         }
 
 
         // DELETE: api/ClassRooms/5
         [HttpDelete("{id}")]
-        public ActionResult Delete(int id)
+        public ActionResult<bool> Delete(int id)
         {
-            var ClassRoom = _context.ClassRooms.FirstOrDefault(x => x.ClassroomId == id);
-            if (ClassRoom == null)
-            {
-                return NotFound("ClassRoom não encontrada");
-            }
+            bool deleted = _classroomService.Delete(id);
 
-            _context.ClassRooms.Remove(ClassRoom);
-            _context.SaveChanges();
-
-            return Ok(ClassRoom);
+            return Ok("Classroom deleted: " + deleted);
         }
 
-        private bool ClassRoomExists(int id)
+        public ActionResult <bool> ClassRoomExists(int id)
         {
-            return _context.ClassRooms.Any(e => e.ClassroomId == id);
+            return Ok(_classroomService.ClassRoomExists(id));
         }
     }
 }

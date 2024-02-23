@@ -20,5 +20,6 @@ public class Classroom
     [StringLength(10)]
     public string? LetterGrade { get; set; } 
     public ICollection<Student>? Students { get; set; }
+    public bool? Active { get; set; } 
 
 }
