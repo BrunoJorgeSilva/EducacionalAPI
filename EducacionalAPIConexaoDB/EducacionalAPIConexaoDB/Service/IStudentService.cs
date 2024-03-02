@@ -1,4 +1,5 @@
 ﻿using EducacionalAPIConexaoDB.Models;
+using EducacionalAPIConexaoDB.ViewModel;
 
 namespace EducacionalAPIConexaoDB.Service
 {
@@ -8,7 +9,7 @@ namespace EducacionalAPIConexaoDB.Service
         public IEnumerable<Student> GetStudentByName(string nome);
 
         public Student GetStudentById(int id);
-        public Student PostStudent(Student student);
+        public StudentViewModel PostStudent(StudentViewModel student);
         public Student PutStudent(int id, Student student2);
         void DeleteStudent(int id);
 

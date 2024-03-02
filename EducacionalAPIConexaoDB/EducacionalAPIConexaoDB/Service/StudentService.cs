@@ -1,15 +1,20 @@
 ﻿using EducacionalAPIConexaoDB.Models;
 using EducacionalAPIConexaoDB.Persistency;
+using EducacionalAPIConexaoDB.ViewModel;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
 
 namespace EducacionalAPIConexaoDB.Service
 {
     public class StudentService : IStudentService
     {
         private readonly IStudentPersistence _studentPersistence;
-        public StudentService(IStudentPersistence studentPersistence) 
+        private readonly IMapper _mapper;
+        public StudentService(IStudentPersistence studentPersistence
+                              ,IMapper mapper) 
         { 
             _studentPersistence = studentPersistence;
+            _mapper = mapper;
         }
 
         public IEnumerable<Student> GetStudents()
@@ -27,9 +32,11 @@ namespace EducacionalAPIConexaoDB.Service
             return _studentPersistence.GetStudentById(id);
         }
 
-        public Student PostStudent (Student student)
+        public StudentViewModel PostStudent (StudentViewModel student)
         {
-            return _studentPersistence.PostStudent(student);
+            return _mapper.Map<StudentViewModel>(_studentPersistence.PostStudent(student));
+            
+
         }
 
         public Student PutStudent(int id, Student student)

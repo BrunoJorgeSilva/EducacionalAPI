@@ -34,7 +34,7 @@ namespace EducacionalAPIConexaoDB.Controllers
             return Ok(classRooms);
         }
 
-        [HttpGet("alunos")]
+        [HttpGet("students")]
         public ActionResult<IEnumerable<Classroom>> GetClassRoomsAlunos()
         {
             var classroomswithstudents = _classroomService.GetClassRoomsAlunos();
@@ -89,6 +89,8 @@ namespace EducacionalAPIConexaoDB.Controllers
 
             return Ok("Classroom deleted: " + deleted);
         }
+
+        [HttpGet("ClassRoomExists")]
 
         public ActionResult <bool> ClassRoomExists(int id)
         {

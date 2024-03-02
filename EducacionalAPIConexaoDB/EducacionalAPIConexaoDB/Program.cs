@@ -3,6 +3,8 @@ using EducacionalAPIConexaoDB.Context;
 using System.Text.Json.Serialization;
 using EducacionalAPIConexaoDB.Persistency;
 using EducacionalAPIConexaoDB.Service;
+using EducacionalAPIConexaoDB.Profiles;
+using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +29,8 @@ builder.Services.AddScoped<IReqWarningService, ReqWarningService>();
 builder.Services.AddScoped<IStudentPersistence, StudentPersistence>();
 builder.Services.AddScoped<IEmailPersistence, EmailPersistence>();
 builder.Services.AddScoped<IClassRoomPersistence, ClassRoomPersistence>();
+
+builder.Services.AddAutoMapper(typeof(MapperProfile));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -53,4 +57,3 @@ static ConfigurationManager GetConfiguration(WebApplicationBuilder builder)
 {
     return builder.Configuration;
 }
-

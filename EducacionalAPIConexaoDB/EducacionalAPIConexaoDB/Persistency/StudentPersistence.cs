@@ -1,17 +1,22 @@
 ﻿using EducacionalAPIConexaoDB.Context;
 using EducacionalAPIConexaoDB.Models;
+using EducacionalAPIConexaoDB.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
 
 namespace EducacionalAPIConexaoDB.Persistency
 {
     public class StudentPersistence : IStudentPersistence
     {
         private readonly AppDbContext _context;
+        private readonly IMapper _mapper;
 
-        public StudentPersistence(AppDbContext context)
+        public StudentPersistence(AppDbContext context
+                                  ,IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         public IEnumerable<Student> GetStudents()
@@ -37,19 +42,20 @@ namespace EducacionalAPIConexaoDB.Persistency
             return _context.Students.Where(x => x.StudentId == id).FirstOrDefault();
         }
 
-        public Student PostStudent(Student student)
+        public Student PostStudent(StudentViewModel student)
         {
+            Student studentEntity = _mapper.Map<Student>(student);
             try
             {
-                _context.Students.Add(student);
+                _context.Students.Add(studentEntity);
                 _context.SaveChanges();
-                return student;
+                return studentEntity;
             }
             catch
             {
                 throw new Exception("Post Student Fail, contact de adm of the Api.");
             }
-            
+          
         }
 
         public Student PutStudent(int id, Student student)

@@ -9,6 +9,8 @@ using EducacionalAPIConexaoDB.Context;
 using EducacionalAPIConexaoDB.Models;
 using EducacionalAPIConexaoDB.Persistency;
 using EducacionalAPIConexaoDB.Service;
+using EducacionalAPIConexaoDB.ViewModel;
+using AutoMapper;
 
 namespace EducacionalAPIConexaoDB.Controllers
 {
@@ -18,12 +20,15 @@ namespace EducacionalAPIConexaoDB.Controllers
     {
         private readonly AppDbContext _context;
         private readonly IStudentService _studentsService;
+        private readonly IMapper _mapper;
 
         public StudentsController(AppDbContext context, 
-                                  IStudentService studentsService)
+                                  IStudentService studentsService
+                                  ,IMapper mapper)
         {
             _context = context;
             _studentsService = studentsService;
+            _mapper = mapper;
         }
 
         // GET: api/Students
@@ -65,7 +70,7 @@ namespace EducacionalAPIConexaoDB.Controllers
         }
 
         [HttpPost]
-        public ActionResult<Student> PostStudent(Student Student)
+        public ActionResult<Student> PostStudent(StudentViewModel Student)
         {
             if (Student is null)
             {
@@ -97,6 +102,7 @@ namespace EducacionalAPIConexaoDB.Controllers
             return Ok("The Student with the id: " + id + ",was successfully deleted.");
         }
 
+        [HttpGet("studentExists")]
         public ActionResult<bool> StudentExists(int id)
         {
             bool exist = _studentsService.StudentExists(id);
